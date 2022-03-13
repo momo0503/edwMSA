@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: user-service
+  h2:
+    console:
+      enable: true
+      settings:
+        web-allow-others: true   #외부에서 접속 허용
+      path: /h2-console
 
 eureka:
   client:
